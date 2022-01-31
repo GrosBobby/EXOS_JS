@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 14</title>
+</head>
+<body>
+    <script>
+
+let tableau = '<table>';
+let lignes = 5;
+let colonnes = 5;
+
+for(let i = 1;i <= lignes;i++) {
+   tableau = tableau + '<tr>';
+   for(let j = 1;j <= colonnes;j++) {
+      tableau = tableau + '<td>Coucou Fabien ! </td>';
+   }
+   tableau = tableau + '</tr>';
+}
+tableau = tableau + '</table>';
+document.body.innerHTML = tableau;
+
+</script>
+</body>
+</html>

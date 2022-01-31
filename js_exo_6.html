@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 6</title>
+</head>
+<body>
+    <script>
+
+let ht = prompt("Montant HT ?");
+let taux_tva = prompt("Taux de TVA ?");
+let ttc = ht * ((taux_tva / 100)+1);
+if(ttc > 100) {
+   document.body.innerHTML = '<h1 style="color: red;">' + ttc + '</h1>';
+} else {
+   document.body.innerHTML = '<h1 style="color: green;">' + ttc + '</h1>';
+}
+
+</script>
+</body>
+</html>
